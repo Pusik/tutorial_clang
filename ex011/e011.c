@@ -10,17 +10,17 @@ int main(int argc, char* argv[])
 	long int var6[10];
 	long long int var7[10];
 
-	printf("sizeof(char) = %d\n", sizeof(char));
-	printf("sizeof(short) = %d\n", sizeof(short));
-	printf("sizeof(int) = %d\n", sizeof(int));
-	printf("sizeof(long int) = %d\n", sizeof(long int));
-	printf("sizeof(long long int) = %d\n", sizeof(long long int));
+	printf("sizeof(char) = %lld\n", sizeof(char));
+	printf("sizeof(short) = %lld\n", sizeof(short));
+	printf("sizeof(int) = %lld\n", sizeof(int));
+	printf("sizeof(long int) = %lld\n", sizeof(long int));
+	printf("sizeof(long long int) = %lld\n", sizeof(long long int));
 
-	printf("sizeof(char *) = %d\n", sizeof(char *));
-	printf("sizeof(short *) = %d\n", sizeof(short *));
-	printf("sizeof(int *) = %d\n", sizeof(int *));
-	printf("sizeof(long int *) = %d\n", sizeof(long int *));
-	printf("sizeof(long long int *) = %d\n", sizeof(long long int *));
+	printf("sizeof(char *) = %lld\n", sizeof(char *));
+	printf("sizeof(short *) = %lld\n", sizeof(short *));
+	printf("sizeof(int *) = %lld\n", sizeof(int *));
+	printf("sizeof(long int *) = %lld\n", sizeof(long int *));
+	printf("sizeof(long long int *) = %lld\n", sizeof(long long int *));
 
 
 	printf("Address of var1_1: %p\n", &var1_1);
