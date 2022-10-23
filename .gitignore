@@ -3,3 +3,12 @@
 ################################################################################
 
 /ex001/x64/Debug
+/.vs/tutorial_clang/v16
+/Debug
+/ex001/Debug
+/ex002/Debug
+*.user
+/ex003/Debug
+/ex004/Debug
+/ex005/Debug
+/ex006/Debug
