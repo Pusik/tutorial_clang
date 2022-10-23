@@ -12,3 +12,7 @@
 /ex004/Debug
 /ex005/Debug
 /ex006/Debug
+/ex011/Debug
+/ex011/x64/Debug
+/x64/Debug
+*.filters
