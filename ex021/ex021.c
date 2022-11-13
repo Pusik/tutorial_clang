@@ -1,6 +1,6 @@
 ﻿#include <stdio.h>
 
-// [C ¾ð¾î] Æ÷ÀÎÅÍ·Î 2Â÷¿ø ¹è¿­ ´Ù·ç±â (ÁÖ¼Ò Á¢±Ù ¹× ¿ø¼Ò °ª Á¢±Ù)
+// [C 언어] 포인터로 2차원 배열 다루기 (주소 접근 및 원소 값 접근)
 // https://wonit.tistory.com/527
 
 // https://stackoverflow.com/questions/1119134/how-do-malloc-and-free-work
@@ -20,12 +20,12 @@ void test1()
 			{11, 12, 13, 14, 15}
 	};
 
-	int(* ptr1)[5]; // ÇàÀ» 3·Î ÇÏ´Â 2Â÷¿ø ¹è¿­ Æ÷ÀÎÅÍ ÇÏ³ª »ý¼º
+	int(* ptr1)[5]; // 행을 3로 하는 2차원 배열 포인터 하나 생성
 	ptr1 = arr;
 
 	printf("arr = %p\n", arr);
 	printf("arr[0] = %p\n", arr[0]);
-	printf("arr[1] = %p, arr[1] - arr[0] = %llXh\n", arr[1], arr[1] - arr[0]);	// Æ÷ÀÎÅÍÀÇ +/- ¿¬»êÀ» À§ÇØ¼­´Â Æ÷ÀÎÅÍÀÇ µ¥ÀÌÅÍ Å¸ÀÔÀ» ¾Ë¾Æ¾ß ÇÑ´Ù.
+	printf("arr[1] = %p, arr[1] - arr[0] = %llXh\n", arr[1], arr[1] - arr[0]);	// 포인터의 +/- 연산을 위해서는 포인터의 데이터 타입을 알아야 한다.
 	printf("arr[2] = %p, arr[2] - arr[0] = %llXh\n", arr[2], arr[2] - arr[0]);
 	printf("&arr[0][0] = %p\n", &arr[0][0]);
 	printf("&arr[1][0] = %p, &arr[1][0] - &arr[0][0] = %llXh\n", &arr[1][0], &arr[1][0] - &arr[0][0]);

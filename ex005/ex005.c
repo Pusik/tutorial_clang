@@ -6,7 +6,7 @@
 void print_name(void)
 {
 #ifdef KOREAN
-	printf("¬÷¡w: ¤b¦¯¢\n");
+	printf("성명: 박부식\n");
 #else
 	printf("Name: Pusik Park\n");
 #endif
