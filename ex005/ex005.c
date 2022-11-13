@@ -1,4 +1,4 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 
 // Conditionals
 
@@ -6,7 +6,7 @@
 void print_name(void)
 {
 #ifdef KOREAN
-	printf("�̸�: �ںν�\n");
+	printf("¬÷¡w: ¤b¦¯¢\n");
 #else
 	printf("Name: Pusik Park\n");
 #endif

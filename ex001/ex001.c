@@ -1,4 +1,4 @@
-// 1. #pragma once --> Result
+﻿// 1. #pragma once --> Result
 // 2. #pragma once --> Result
 // 3. Remove '#pragma once' --> Error
 // 4. #pragma once --> #ifndef 

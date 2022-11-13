@@ -1,6 +1,6 @@
-#include <stdio.h>
+ï»¿#include <stdio.h>
 
-// [C ¾ğ¾î] Æ÷ÀÎÅÍ·Î 2Â÷¿ø ¹è¿­ ´Ù·ç±â (ÁÖ¼Ò Á¢±Ù ¹× ¿ø¼Ò °ª Á¢±Ù)
+// [C Â¾Ã°Â¾Ã®] Ã†Ã·Ã€ÃÃ…ÃÂ·Ã 2Ã‚Ã·Â¿Ã¸ Â¹Ã¨Â¿Â­ Â´Ã™Â·Ã§Â±Ã¢ (ÃÃ–Â¼Ã’ ÃÂ¢Â±Ã™ Â¹Ã— Â¿Ã¸Â¼Ã’ Â°Âª ÃÂ¢Â±Ã™)
 // https://wonit.tistory.com/527
 
 // https://stackoverflow.com/questions/1119134/how-do-malloc-and-free-work
@@ -20,12 +20,12 @@ void test1()
 			{11, 12, 13, 14, 15}
 	};
 
-	int(* ptr1)[5]; // ÇàÀ» 3·Î ÇÏ´Â 2Â÷¿ø ¹è¿­ Æ÷ÀÎÅÍ ÇÏ³ª »ı¼º
+	int(* ptr1)[5]; // Ã‡Ã Ã€Â» 3Â·Ã Ã‡ÃÂ´Ã‚ 2Ã‚Ã·Â¿Ã¸ Â¹Ã¨Â¿Â­ Ã†Ã·Ã€ÃÃ…Ã Ã‡ÃÂ³Âª Â»Ã½Â¼Âº
 	ptr1 = arr;
 
 	printf("arr = %p\n", arr);
 	printf("arr[0] = %p\n", arr[0]);
-	printf("arr[1] = %p, arr[1] - arr[0] = %llXh\n", arr[1], arr[1] - arr[0]);	// Æ÷ÀÎÅÍÀÇ +/- ¿¬»êÀ» À§ÇØ¼­´Â Æ÷ÀÎÅÍÀÇ µ¥ÀÌÅÍ Å¸ÀÔÀ» ¾Ë¾Æ¾ß ÇÑ´Ù.
+	printf("arr[1] = %p, arr[1] - arr[0] = %llXh\n", arr[1], arr[1] - arr[0]);	// Ã†Ã·Ã€ÃÃ…ÃÃ€Ã‡ +/- Â¿Â¬Â»ÃªÃ€Â» Ã€Â§Ã‡Ã˜Â¼Â­Â´Ã‚ Ã†Ã·Ã€ÃÃ…ÃÃ€Ã‡ ÂµÂ¥Ã€ÃŒÃ…Ã Ã…Â¸Ã€Ã”Ã€Â» Â¾Ã‹Â¾Ã†Â¾ÃŸ Ã‡Ã‘Â´Ã™.
 	printf("arr[2] = %p, arr[2] - arr[0] = %llXh\n", arr[2], arr[2] - arr[0]);
 	printf("&arr[0][0] = %p\n", &arr[0][0]);
 	printf("&arr[1][0] = %p, &arr[1][0] - &arr[0][0] = %llXh\n", &arr[1][0], &arr[1][0] - &arr[0][0]);
@@ -89,7 +89,7 @@ void test1()
 	Where Should Malloc be used?
 
 	1. Dynamic Memory allocation
-		Dynamic Memory Allocation helps us allocate a piece of memory as per the user¡¯s demand. It returns a pointer to the start of that memory, which could be treated similarly to an array.
+		Dynamic Memory Allocation helps us allocate a piece of memory as per the userÂ¡Â¯s demand. It returns a pointer to the start of that memory, which could be treated similarly to an array.
 
 	2. Heap memory
 		malloc() allocates the memory location on the heap and returns a pointer on the stack pointing to the starting address of the array type memory being allocated whereas the static array size put a hard upper limit on how much data the program could process at any one time, without being recompiled.
