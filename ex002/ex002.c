@@ -8,6 +8,10 @@
 int main(int argc, char* argv[])
 {
 	int x = 1, y = 2, z = 3, xy = 5, yz = 10, xz = 15;
+	int Rotten, Apple;
+
+	printf("%s\n", to_str(var_concat(Rotten, Apple)));
+	printf("%s\n", var_concat(to_str(Rotten), to_str(Apple)));
 
 	printf("x = %d, y = %d, z = %d, xy = % d\n", x, y, z, xy);
 	printf("x = %d, y = %d, z = %d, yz = % d\n", x, y, z, var_concat(y, z));
